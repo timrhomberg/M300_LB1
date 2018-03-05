@@ -12,9 +12,13 @@ sudo apt-get -y install isc-dhcp-server
 
 Das Konfigurationfile vom DHCP Server befindet sich im Pfad /etc/dhcp/dhcpd.conf. Im Konfigurationfile wird folgendes geändert:
 * Domainname
+* DNS
 * DHCP Scope
-Domainname --> labor.local
-neuer Scope Bereich
+
+Der Domainname lautet labor.local
+```
+sudo sed -i 's/example.org/labor.local/g' /etc/dhcp/dhcpd.conf
+```
 
 Der Scope Bereich ist folgendermassen konfiguriert:
 
