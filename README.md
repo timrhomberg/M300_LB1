@@ -38,3 +38,8 @@ sudo sed -i '$arange 192.168.50.50 192.168.50.80;' /etc/dhcp/dhcpd.conf
 sudo sed -i '$aoption routers 192.168.50.1;' /etc/dhcp/dhcpd.conf
 sudo sed -i '$a}' /etc/dhcp/dhcpd.conf
 ```
+
+Am ende wird noch das Tastaturlayout auf Deutsch Schweiz gestellt.
+```
+sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
+```
