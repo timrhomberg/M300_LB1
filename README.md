@@ -71,3 +71,5 @@ Mit folgendem Befehl kann die VM aufgesetzt werden.
 ```
 vagrant up
 ```
+
+Um sicherzustellen das der DHCP Server lauft kann eine zusätzlich VM aufgesetzt werden und im gleichen Netz platziert werden. Danach sollte die VM eine IP aus dem Range bekommen.
