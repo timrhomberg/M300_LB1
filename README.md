@@ -3,6 +3,11 @@
 Für die VM wird die Debian Box verwendet. 
 
 Als erstes wird das Paketverzeichnis aktualisiert. Im nächsten Schritt wird der DHCP Server installiert. Das Paket lautet: ISC-DHCP-SERVER.
+```
+sudo apt-get update
+sudo apt-get -y install isc-dhcp-server
+```
+
 
 Das Konfigurationfile vom DHCP Server befindet sich im Pfad /etc/dhcp/dhcpd.conf.
 
