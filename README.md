@@ -19,11 +19,11 @@ Range --> 192.168.50.50 - 80
 Gateway --> 192.168.50.1
 
 Code:
-  sudo sed -i 's/example.org/labor.local/g' /etc/dhcp/dhcpd.conf
-  sudo sed -i 's/ns2.labor.local/8.8.8.8/g' /etc/dhcp/dhcpd.conf
-  sudo sed -i 's/#authoritative/authoritative/g' /etc/dhcp/dhcpd.conf
-  sudo sed -i '$asubnet 192.168.50.0 netmask 255.255.255.0 {' /etc/dhcp/dhcpd.conf
-  sudo sed -i '$arange 192.168.50.50 192.168.50.80;' /etc/dhcp/dhcpd.conf
-  sudo sed -i '$aoption routers 192.168.50.1;' /etc/dhcp/dhcpd.conf
-  sudo sed -i '$a}' /etc/dhcp/dhcpd.conf
+    sudo sed -i 's/example.org/labor.local/g' /etc/dhcp/dhcpd.conf
+    sudo sed -i 's/ns2.labor.local/8.8.8.8/g' /etc/dhcp/dhcpd.conf
+    sudo sed -i 's/#authoritative/authoritative/g' /etc/dhcp/dhcpd.conf
+    sudo sed -i '$asubnet 192.168.50.0 netmask 255.255.255.0 {' /etc/dhcp/dhcpd.conf
+    sudo sed -i '$arange 192.168.50.50 192.168.50.80;' /etc/dhcp/dhcpd.conf
+    sudo sed -i '$aoption routers 192.168.50.1;' /etc/dhcp/dhcpd.conf
+    sudo sed -i '$a}' /etc/dhcp/dhcpd.conf
 
