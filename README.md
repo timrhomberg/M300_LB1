@@ -1,2 +1,2 @@
 # M300_LB1
-Vagrantfile für das automati
+Vagrantfile für das automatische aufsetzten des DHCP Servers
