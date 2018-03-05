@@ -38,7 +38,10 @@ sudo sed -i '$arange 192.168.50.50 192.168.50.80;' /etc/dhcp/dhcpd.conf
 sudo sed -i '$aoption routers 192.168.50.1;' /etc/dhcp/dhcpd.conf
 sudo sed -i '$a}' /etc/dhcp/dhcpd.conf
 ```
-
+Nach der Konfiguration wird der DHCP Service neu gestartet.
+```
+sudo service isc-dhcp-server restart
+```
 Am ende wird noch das Tastaturlayout auf Deutsch Schweiz gestellt.
 ```
 sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
