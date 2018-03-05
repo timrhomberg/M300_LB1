@@ -10,10 +10,9 @@ sudo apt-get update
 sudo apt-get -y install isc-dhcp-server
 ```
 
-
-Das Konfigurationfile vom DHCP Server befindet sich im Pfad /etc/dhcp/dhcpd.conf.
-
-Im Konfigurationfile werden folgende Paramterer verändert:
+Das Konfigurationfile vom DHCP Server befindet sich im Pfad /etc/dhcp/dhcpd.conf. Im Konfigurationfile wird folgendes geändert:
+* Domainname
+* DHCP Scope
 Domainname --> labor.local
 neuer Scope Bereich
 
@@ -25,7 +24,6 @@ Range --> 192.168.50.50 - 80
 
 Gateway --> 192.168.50.1
 
-Code:
 ```
 sudo sed -i 's/example.org/labor.local/g' /etc/dhcp/dhcpd.conf
 sudo sed -i 's/ns2.labor.local/8.8.8.8/g' /etc/dhcp/dhcpd.conf
