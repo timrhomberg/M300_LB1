@@ -4,6 +4,22 @@ Als erstes habe ich die Multi VM Umgebung aufgebaut. Das File und der Code befin
 
 Für die VM wird die Debian Box verwendet (<a href="https://app.vagrantup.com/debian/boxes/jessie64">Link</a>). 
 
+Die VM hat folgende Spezifikationen:
+* IP: 192.168.50.4
+* Hostname: dhcp
+* RAM: 1024 MB
+* VM Box: Debian
+
+```
+config.vm.define "dhcp" do |dhcp|
+    dhcp.vm.box = "debian/jessie64"
+    dhcp.vm.hostname = "dhcp"
+    dhcp.vm.network "private_network", ip:"192.168.50.4" 
+	dhcp.vm.provider "virtualbox" do |vb|
+	  vb.memory = "1024"  
+	end     
+```
+
 Als erstes wird das Paketverzeichnis aktualisiert. Im nächsten Schritt wird der DHCP Server installiert. Das Paket lautet: ISC-DHCP-SERVER.
 ```
 sudo apt-get update
