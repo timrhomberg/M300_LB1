@@ -1,6 +1,6 @@
 # M300_LB1
 
-Überschrift 1
+Vagrantfile
 -------------
 Als erstes habe ich die Multi VM Umgebung aufgebaut. Das File und der Code befindet sich <a href="https://github.com/mc-b/devops/tree/master/vagrant/mmdb">Hier</a>.
 
@@ -63,4 +63,11 @@ sudo service isc-dhcp-server restart
 Am ende wird noch das Tastaturlayout auf Deutsch Schweiz gestellt.
 ```
 sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
+```
+
+Aufsetzten
+----------
+Mit folgendem Befehl kann die VM aufgesetzt werden.
+```
+vagrant up
 ```
