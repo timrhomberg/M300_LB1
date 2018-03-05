@@ -13,7 +13,9 @@ neuer Scope Bereich
 
 Der Scope Bereich ist folgendermassen konfiguriert:
 Subnet --> 192.168.50.0/24
+
 Range --> 192.168.50.50 - 80
+
 Gateway --> 192.168.50.1
 
 
