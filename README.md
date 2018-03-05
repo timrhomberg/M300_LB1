@@ -1,5 +1,6 @@
 # M300_LB1
 
+Als erstes habe ich die Multi VM Umgebung aufgebaut. Das File und der Code befindet sich <a href="https://github.com/mc-b/devops/tree/master/vagrant">Hier</a>
 Für die VM wird die Debian Box verwendet. 
 
 Als erstes wird das Paketverzeichnis aktualisiert. Im nächsten Schritt wird der DHCP Server installiert. Das Paket lautet: ISC-DHCP-SERVER.
