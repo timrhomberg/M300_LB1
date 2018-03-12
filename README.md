@@ -64,6 +64,12 @@ Am ende wird noch das Tastaturlayout auf Deutsch Schweiz gestellt.
 ```
 sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
 ```
+Danach wird noch eine lokale Firewall installiert und anschliessend auch konfiguriert. Wir öffnen den Port 22 um via SSH darauf zuzugreifen.
+```
+sudo apt-get -y install ufw gufw 
+sudo ufw allow from 10.0.2.2 to any port 22
+sudo ufw --force enable    
+```
 
 Aufsetzten
 ----------
