@@ -29,6 +29,9 @@ Vagrant.configure(2) do |config|
         #sudo sed -i 's/LANG=en_US.UTF-8/LANG=de_CH.UTF-8/g' /etc/default/locale
         sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
         #sudo reboot
+	sudo ufw allow 22/tcp
+	sudo ufw allow from 192.168.55.101 to any port 80 
+	sudo ufw -f enable		
 SHELL
 	end  
  end
