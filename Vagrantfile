@@ -29,6 +29,7 @@ Vagrant.configure(2) do |config|
         #sudo sed -i 's/LANG=en_US.UTF-8/LANG=de_CH.UTF-8/g' /etc/default/locale
         sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
         #sudo reboot
+	sudo apt-get install ufw gufw 
 	sudo ufw enable
 	sudo ufw allow 22/tcp		
 SHELL
