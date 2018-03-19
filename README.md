@@ -83,33 +83,9 @@ Um sicherzustellen das der DHCP Server lauft kann eine zusätzlich VM aufgesetzt
 SSH Keys
 ---------
 RSA Private Key:
-```
-MIIEogIBAAKCAQEAtMk1DACc0uYjtx8wLT2Dii/WF3h/3NhQD23BjDZYdOcmhkPL
-Gmy8dDZNwU6X4/3BvjwbZkSH4A1/dvKermAPVGHtgqDl1e0G1CTc3iB7ga9i5HCR
-wmq2729JQ72cfYTYc7k17TNoOdfkYMibV8Kl/TunnJtFt8x9eglblWG7EhZ7TvxF
-Rmqg+deKp8FzGDflaK0kTmsHRG1x10I8KfKKKLYdpdJ18UGGjwEoLo53o4EevE5G
-vxa6ckw/w6ezNsuBC4PNtb56aH5mSdz5HUL5Bfg9FNMO5z1Kg7SvfHr9bh1OOBpm
-EAdoBMEbcnUakySGXwSNwO/KnXjMqOCVf4Z11QIDAQABAoIBAAqN3Izw1DbzvI4K
-QhPCDZXZqRQBsuU/s5zS+YOoAI4CmJsqBgdq5a2bJfrtDaz/uXnTpH3Z7lzELPbS
-vzTK4to4RVdk8UYF6mokJMjK+KrfhFR1xeylsjxUMODFhwdE5CYNX/qTD7igw/Jq
-g7ch4/LesrBP2Egcpg6j0TbtV7B8il8Kfvp2Clt1w2LLFKEK99A3zWLC21xK8ZvT
-j6U5xP9LTV+srv/4yGY6MTBG2AzGs9Au7+dCb7ZrsFE5Bk2dO2Gvl3sdk02oJgUC
-3sjBnE49yaAqZtjLP2P52Iw57fOYGAQ8vZqatKGDXaES66cet+tFtNHhH+iqP07r
-JI+URQECgYEA37S7kRX28iqXvvcjW0YblmMUjFqo73sz9Qk17C8eCNwtZMsyp2+4
-+aO1opuCcHn6CER+P4I39RshqVpFJkaP75IM3ev4GbfEMwsgww08hViD6lfqN4CY
-dGmbpdCPb5/xAOs/UshpTgmqnu8FOe7QoJ4K+WA3GoNtgTHEBrnxIzUCgYEAzuJT
-CTxLNs4rqncLD+rCuZkXwA+TphhK5BA2GZiCubNJ6k1wY4n6ipOaP2uzjOACbnaO
-2f44GTBl9G1PT9+JQHOC5wrgCxib+m1hF7XNo/82gbZZuAG8gqZCfMDDqc5NyIcE
-b8tG5rZwEfZaSJ5H6vk0dGwZlrCVIecW+Nf+vCECgYA8YHMfPWZhBc3e5KTORaW8
-eRFasD1YJVBomgvLqwvYKFS4F3+cYTLzbZPgR0h1QvaQtKu+SE8CAEidhJeVNQY0
-Cp8eZkmX51k0zZQSEMh81N8FqKS2RibfhIFVx2xvHCPXs6ZrmVuSjFlYe/pVIHd+
-YilkFOvKZB5x+BSIHDdQ4QKBgCH9HuVCiZzcbGIaIrAfwpQZacR9CqXcEdm8LBcy
-bi+yG++pf1BrJ8VCkLHgsOPxHZUmVzvLP04sHGP23XPi5rq2/4eTytEn3uBavfvW
-O4247SyMV9saNe1FAWFbjgnEwhSy0fDH9cMLsAfTcGvDzU72WD7UT7PpGOcz/xss
-6UXhAoGANAkMXjwoTo9cF7aUowBPqPJmjgYHHL1WUBLF8PMc9K/4lIOIV+u/5nrL
-bHTDLUzbhtzXHHK7ewzQPuv45I3qTTgcgj+1cvpOVKFJtXOnLfjObwhI6MM8zgKT
-lm28PJTNllsESwPMD14oBGemBLoReSRF8WTfFlCH/3ji02z5aZ0=
-```
+
+Der Private Key habe ich nicht hinterlegt da, dieser nur Privat sein sollte
+
 RSA Public Key:
 ```
 AAAAB3NzaC1yc2EAAAADAQABAAABAQC0yTUMAJzS5iO3HzAtPYOKL9YXeH/c2FAPb
@@ -128,3 +104,5 @@ Für den Reverse Proxy habe ich foglende VM aufgesetzt:
 1x Master
 
 Das Vagrant File befindet sich <a href="https://github.com/mc-b/devops/tree/master/vagrant/fwrp">Hier</a>
+
+Danach kann über 192.168.50.101 auf den Webserver zugegriffen werden.
