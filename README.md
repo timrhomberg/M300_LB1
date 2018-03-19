@@ -119,3 +119,12 @@ VYbsSFntO/EVGaqD514qnwXMYN+VorSROawdEbXHXQjwp8oooth2l0nXxQYaPASgu
 jnejgR68Tka/FrpyTD/Dp7M2y4ELg821vnpofmZJ3PkdQvkF+D0U0w7nPUqDtK98e
 v1uHU44GmYQB2gEwRtydRqTJIZfBI3A78qdeMyo4JV/hnXV
 ````````
+
+Reverse Proxy
+-------------
+Für den Reverse Proxy habe ich foglende VM aufgesetzt:
+1x Web Server
+1x DB Server
+1x Master
+
+Das Vagrant File befindet sich <a href="https://github.com/mc-b/devops/tree/master/vagrant/fwrp">Hier</a>
